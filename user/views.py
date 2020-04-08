@@ -3,6 +3,9 @@ from django.shortcuts import render
 
 
 # Create your views here.
+from django.urls import reverse
+
 
 def demo(requests):
+    print(reverse('index:main'))
     return HttpResponse('hello world')
